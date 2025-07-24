@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    color: white;
+    background: #000;
+    max-height: 400px;
+}
+
+
+header{
+   margin: 10px;
+   line-height: 1px;
+   font-family: monospace;
+}
+header h3{
+    color: lightgreen;;
+}
