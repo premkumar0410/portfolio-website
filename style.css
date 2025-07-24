@@ -90,3 +90,19 @@ header h3{
 }
 
 
+/*Right side*/
+.right{
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.right-header{
+    color: lightgreen;
+    padding-top: 5px;
+    line-height: 1px;
+}
+hr{
+    background-color: antiquewhite;
+}
