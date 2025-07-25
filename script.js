@@ -16,7 +16,7 @@ clear
 `
 }
 
-
+const right_side = document.querySelector(".right");
 //generate input line 
 function createinputline(){
     const output = document.querySelector(".output");
@@ -26,7 +26,7 @@ function createinputline(){
 
     const prompt = document.createElement("span");
     prompt.className = "prompt";
-    prompt.textContent = "prem@portfolio:>";
+    prompt.innerHTML = `prem@portfolio:<a style="color:rgb(112, 23, 196);">$<a/>`;
 
     const input = document.createElement("input")
     input.className ="commandInput";
@@ -40,6 +40,9 @@ function createinputline(){
     output.appendChild(inputline)
 
     input.focus();
+    right_side.addEventListener("click",()=>{
+        input.focus();
+    })
   
 }
 
@@ -60,10 +63,16 @@ function handleCommandInput(e){
         if(resonse){
             responsediv.textContent = resonse
         }else{
-            responsediv.textContent = `command not available`
+           responsediv.innerHTML =`command ${inputvalue} not recognized. Type 'help' for available commmand `
+        responsediv.style.color="red"
         }
 
-        output.appendChild(responsediv)
+        output.append(responsediv)
+
+         createinputline();
+
+          const terminal = document.querySelector(".terminal");
+        terminal.scrollTop = terminal.scrollHeight;
     }
 
 }
