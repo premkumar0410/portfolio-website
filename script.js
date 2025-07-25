@@ -185,7 +185,7 @@ function handleCommandInput(e){
         const responsediv = document.createElement("div");
         responsediv.style.whiteSpace = "pre-wrap"
         if(resonse){
-            responsediv.textContent = resonse
+            responsediv.innerHTML = resonse
         }else{
            responsediv.innerHTML =`command ${inputvalue} not recognized. Type 'help' for available commmand `
         responsediv.style.color="red"
