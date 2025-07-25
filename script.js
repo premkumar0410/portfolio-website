@@ -2,6 +2,12 @@ window.addEventListener("DOMContentLoaded",()=>{
     createinputline();
 })
 
+const useragent = navigator.userAgent;
+
+
+
+
+
 const command = {
     help:`
 Available commands:
@@ -26,7 +32,14 @@ function createinputline(){
 
     const prompt = document.createElement("span");
     prompt.className = "prompt";
-    prompt.innerHTML = `prem@portfolio:<a style="color:rgb(112, 23, 196);">$<a/>`;
+    if(useragent.includes("Mac")){
+     prompt.innerHTML = `guest@portfolio:~<a style="color:rgb(112, 23, 196);">$<a/>`;
+    }else if(useragent.includes("Win")){
+     prompt.innerHTML = "C:\\Users\\Guest>";
+    }else{
+     prompt.innerHTML = "C:\\Users\\username>";
+    }
+   
 
     const input = document.createElement("input")
     input.className ="commandInput";

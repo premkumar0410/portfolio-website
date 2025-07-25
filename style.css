@@ -145,3 +145,57 @@ footer{
     margin-top: 0;
     padding-left: 10px;
 }
+
+
+@media (max-width: 1200px) {
+      *{
+        font-size: 10px;
+      }
+
+      .right-header{
+        line-height: 30px;
+   
+}
+
+.container-info,
+.container-detail{
+    width: 170px;
+    height: 200px;
+}
+}
+
+@media (max-height:600px){
+
+ .card-group:hover .container-info{
+     transform: translate(20%,0%);
+    
+    box-shadow: 0.4s ease;
+}
+.card-group:hover .container-detail{
+     transform: translate(-120%,0%);
+    
+    box-shadow: 0.4s ease;
+}
+
+   .container-info,
+.container-detail{
+    width: 170px;
+    height: 200px;
+}
+
+}
+
+@media (max-width:850px){
+    
+ .card-group:hover .container-info{
+     transform: translate(-50%,-150%);
+    
+    box-shadow: 0.4s ease;
+}
+.card-group:hover .container-detail{
+     transform: translate(-50%,0%);
+    
+    box-shadow: 0.4s ease;
+}
+
+}
