@@ -85,7 +85,7 @@ Eager to contribute to a dynamic team and grow as a tech professional
     📊 Percentage: 65%
 
 `,
-Certification:`
+certification:`
 📜 Certifications:
 
 ✅ SQL and Relational Databases 101  
@@ -155,6 +155,7 @@ function createinputline(){
     const input = document.createElement("input")
     input.className ="commandInput";
     input.type="text";
+    
     input.addEventListener("keydown", handleCommandInput);
     
 
