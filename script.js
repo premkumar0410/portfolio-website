@@ -181,7 +181,7 @@ function handleCommandInput(e){
             return;
         }
 //check command with the input
-        const resonse = command[inputvalue];
+        const resonse = commands[inputvalue];
         const responsediv = document.createElement("div");
         responsediv.style.whiteSpace = "pre-wrap"
         if(resonse){
