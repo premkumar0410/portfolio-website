@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 const useragent = navigator.userAgent;
 
-
+//ssssssssss
 //firebase storage
 const right_side = document.querySelector(".right");
 const firebaseConfig = {
