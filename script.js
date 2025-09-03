@@ -4,9 +4,9 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 const useragent = navigator.userAgent;
 
-
-//firebase storage
 const right_side = document.querySelector(".right");
+//firebase storage
+
 const firebaseConfig = {
   apiKey: "AIzaSyC52lvf9nSVmaEJsQhJGFeTjdoYl_UKU1k",
   authDomain: "portfolio-terminal-48e1b.firebaseapp.com",
@@ -15,7 +15,6 @@ const firebaseConfig = {
   messagingSenderId: "236464773510",
   appId: "1:236464773510:web:702f87f765c225d4367407"
 };
-
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore(); 
@@ -71,7 +70,7 @@ async function handleCommandInput(e){
             return;
         }
 //check command with the input
-        // const resonse = commands[inputvalue];
+        //const resonse = commands[inputvalue];
         const responsediv = document.createElement("div");
         responsediv.style.whiteSpace = "pre-wrap"
 
